@@ -8,29 +8,28 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var RestauranteComponent = (function () {
     function RestauranteComponent() {
         this.id_restaurante = '';
         this.nome_restaurante = '';
     }
-    __decorate([
-        core_1.Input(),
-        __metadata("design:type", String)
-    ], RestauranteComponent.prototype, "id_restaurante", void 0);
-    __decorate([
-        core_1.Input(),
-        __metadata("design:type", String)
-    ], RestauranteComponent.prototype, "nome_restaurante", void 0);
-    RestauranteComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'restaurante',
-            templateUrl: './restaurante.component.html',
-        })
-    ], RestauranteComponent);
     return RestauranteComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], RestauranteComponent.prototype, "id_restaurante", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], RestauranteComponent.prototype, "nome_restaurante", void 0);
+RestauranteComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'restaurante',
+        templateUrl: './restaurante.component.html',
+    })
+], RestauranteComponent);
 exports.RestauranteComponent = RestauranteComponent;
 //# sourceMappingURL=restaurante.component.js.map

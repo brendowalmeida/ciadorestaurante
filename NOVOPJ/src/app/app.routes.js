@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var router_1 = require("@angular/router");
 var home_component_1 = require("./home/home.component");
 var restaurante_lista_component_1 = require("./restaurante/lista/restaurante.lista.component");

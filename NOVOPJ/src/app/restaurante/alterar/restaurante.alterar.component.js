@@ -8,7 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var router_1 = require("@angular/router");
@@ -42,15 +41,15 @@ var RestauranteAlterarComponent = (function () {
             console.log('Restaurante alterado via WEBAPI.');
         });
     };
-    RestauranteAlterarComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'cadastro',
-            templateUrl: './restaurante.alterar.component.html',
-        }),
-        __metadata("design:paramtypes", [router_1.ActivatedRoute, http_1.Http])
-    ], RestauranteAlterarComponent);
     return RestauranteAlterarComponent;
 }());
+RestauranteAlterarComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'cadastro',
+        templateUrl: './restaurante.alterar.component.html',
+    }),
+    __metadata("design:paramtypes", [router_1.ActivatedRoute, http_1.Http])
+], RestauranteAlterarComponent);
 exports.RestauranteAlterarComponent = RestauranteAlterarComponent;
 //# sourceMappingURL=restaurante.alterar.component.js.map

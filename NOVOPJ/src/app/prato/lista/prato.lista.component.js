@@ -8,7 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var prato_component_1 = require("../prato.component");
@@ -49,15 +48,15 @@ var PratoListaComponent = (function () {
             _this.pratos = pratos;
         }, function (erro) { return console.log(erro); });
     };
-    PratoListaComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'lista',
-            templateUrl: './prato.lista.component.html',
-        }),
-        __metadata("design:paramtypes", [http_1.Http])
-    ], PratoListaComponent);
     return PratoListaComponent;
 }());
+PratoListaComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'lista',
+        templateUrl: './prato.lista.component.html',
+    }),
+    __metadata("design:paramtypes", [http_1.Http])
+], PratoListaComponent);
 exports.PratoListaComponent = PratoListaComponent;
 //# sourceMappingURL=prato.lista.component.js.map

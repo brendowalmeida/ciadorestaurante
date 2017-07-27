@@ -8,7 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var restaurante_component_1 = require("../restaurante.component");
@@ -50,15 +49,15 @@ var RestauranteListaComponent = (function () {
             _this.restaurantes = restaurantes;
         }, function (erro) { return console.log(erro); });
     };
-    RestauranteListaComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'lista',
-            templateUrl: './restaurante.lista.component.html',
-        }),
-        __metadata("design:paramtypes", [http_1.Http])
-    ], RestauranteListaComponent);
     return RestauranteListaComponent;
 }());
+RestauranteListaComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'lista',
+        templateUrl: './restaurante.lista.component.html',
+    }),
+    __metadata("design:paramtypes", [http_1.Http])
+], RestauranteListaComponent);
 exports.RestauranteListaComponent = RestauranteListaComponent;
 //# sourceMappingURL=restaurante.lista.component.js.map

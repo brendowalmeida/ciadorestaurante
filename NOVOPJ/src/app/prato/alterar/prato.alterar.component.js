@@ -8,7 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var router_1 = require("@angular/router");
@@ -51,15 +50,15 @@ var PratoAlterarComponent = (function () {
             console.log('Prato alterado via WEBAPI.');
         });
     };
-    PratoAlterarComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'cadastro',
-            templateUrl: './prato.alterar.component.html',
-        }),
-        __metadata("design:paramtypes", [router_1.ActivatedRoute, http_1.Http])
-    ], PratoAlterarComponent);
     return PratoAlterarComponent;
 }());
+PratoAlterarComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'cadastro',
+        templateUrl: './prato.alterar.component.html',
+    }),
+    __metadata("design:paramtypes", [router_1.ActivatedRoute, http_1.Http])
+], PratoAlterarComponent);
 exports.PratoAlterarComponent = PratoAlterarComponent;
 //# sourceMappingURL=prato.alterar.component.js.map

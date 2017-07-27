@@ -8,7 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 var prato_component_1 = require("../prato.component");
@@ -42,15 +41,15 @@ var PratoCadastroComponent = (function () {
             _this.mensagem = "Prato cadastrado com sucesso.";
         });
     };
-    PratoCadastroComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'cadastro',
-            templateUrl: './prato.cadastro.component.html',
-        }),
-        __metadata("design:paramtypes", [http_1.Http])
-    ], PratoCadastroComponent);
     return PratoCadastroComponent;
 }());
+PratoCadastroComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'cadastro',
+        templateUrl: './prato.cadastro.component.html',
+    }),
+    __metadata("design:paramtypes", [http_1.Http])
+], PratoCadastroComponent);
 exports.PratoCadastroComponent = PratoCadastroComponent;
 //# sourceMappingURL=prato.cadastro.component.js.map

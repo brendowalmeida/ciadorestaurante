@@ -8,7 +8,6 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var PratoComponent = (function () {
     function PratoComponent() {
@@ -18,34 +17,34 @@ var PratoComponent = (function () {
         this.id_restaurante = '';
         this.nome_restaurante = '';
     }
-    __decorate([
-        core_1.Input(),
-        __metadata("design:type", String)
-    ], PratoComponent.prototype, "id_prato", void 0);
-    __decorate([
-        core_1.Input(),
-        __metadata("design:type", String)
-    ], PratoComponent.prototype, "nome_prato", void 0);
-    __decorate([
-        core_1.Input(),
-        __metadata("design:type", String)
-    ], PratoComponent.prototype, "preco_prato", void 0);
-    __decorate([
-        core_1.Input(),
-        __metadata("design:type", String)
-    ], PratoComponent.prototype, "id_restaurante", void 0);
-    __decorate([
-        core_1.Input(),
-        __metadata("design:type", String)
-    ], PratoComponent.prototype, "nome_restaurante", void 0);
-    PratoComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'prato',
-            templateUrl: './prato.component.html',
-        })
-    ], PratoComponent);
     return PratoComponent;
 }());
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], PratoComponent.prototype, "id_prato", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], PratoComponent.prototype, "nome_prato", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], PratoComponent.prototype, "preco_prato", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], PratoComponent.prototype, "id_restaurante", void 0);
+__decorate([
+    core_1.Input(),
+    __metadata("design:type", String)
+], PratoComponent.prototype, "nome_restaurante", void 0);
+PratoComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'prato',
+        templateUrl: './prato.component.html',
+    })
+], PratoComponent);
 exports.PratoComponent = PratoComponent;
 //# sourceMappingURL=prato.component.js.map
