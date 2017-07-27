@@ -1,0 +1,47 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Restaurantes</h3>
+            <hr />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1">
+            <a [routerLink]="['/restaurante/cadastro']"><button type="button" class="btn btn-info"><i class="fa fa-plus-square" aria-hidden="true"></i> Cadastrar</button></a>
+        </div>
+        <div class="col-md-5">
+            <input class="form-control" #textoRestaurante (keyup)="0" placeholder="Consulte em tempo real pelo nome do restaurante" />
+
+        </div>
+    </div>
+
+    <br />
+
+    <p *ngIf="mensagem.length" class="alert alert-info">{{mensagem}}</p>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr class="active">
+                            <th title="Número" class="text-center">Nº </th>
+                            <th>Restaurantes</th>
+                            <th class="text=center" class="text-center">Função</th>
+                        </tr>
+                        <tr *ngFor="let restaurante of (restaurantes | filtroPorNomeRestaurante: textoRestaurante.value )">
+                            <td class="text-center">{{restaurante.id_restaurante}}</td>
+                            <td>{{restaurante.nome_restaurante}}</td>
+                            <td class="text-center">
+                                <a [routerLink]="['/restaurante/alterar', restaurante.id_restaurante]"><button class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i></button></a>
+                                <button class="btn btn-danger" (click)="excluir(restaurante)"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

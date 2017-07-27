@@ -1,0 +1,44 @@
+﻿<div class="container">
+    <h2 class="text-center">Cadastro de Prato</h2>
+   <hr /><br />
+    <form class="form-horizontal" (submit)="cadastrar()">
+        <div class="row col-md-offset-2">
+            <div class="form-group">
+                <label class="col-md-2 text-right">Nome</label>
+                <div class="col-md-5">
+                    <input name="nome" [(ngModel)]="prato.nome_prato" type="text" class="form-control" value="">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2 text-right">Preço</label>
+                <div class="col-md-5">
+                    <input name="preco" [(ngModel)]="prato.preco_prato" type="text" class="form-control" value="">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-2 text-right">Restaurante</label>
+                <div class="col-md-5">
+                    <select name="comboRestaurante" [(ngModel)]="prato.id_restaurante" class="form-control">
+                        <option *ngFor="let restaurante of restaurantes" [ngValue]="restaurante.id_restaurante">{{restaurante.nome_restaurante}}</option>
+                    </select>
+                </div>
+            </div>
+
+
+        </div>
+
+        <br />
+
+        <p *ngIf="mensagem.length" class="alert alert-success">{{mensagem}} <br /></p>
+
+        <div class="row">
+            <div class="col-md-3 col-md-offset-6">
+                <a [routerLink]="['/prato']"><button type="button" class="btn btn-danger"> <i class="fa fa-times" aria-hidden="true"></i> Cancelar</button></a>
+                <button type="submit" class="btn btn-info"><i class="fa fa-plus-square" aria-hidden="true"></i> Cadastrar</button>
+            </div>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,52 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Pratos</h3>
+            <hr />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1">
+            <a [routerLink]="['/prato/cadastro']"><button type="button" class="btn btn-info"><i class="fa fa-plus-square" aria-hidden="true"></i> Cadastrar</button></a>
+        </div>
+        <div class="col-md-5">
+            <input class="form-control" #textoPrato (keyup)="0" placeholder="Consulte em tempo real pelo nome do prato" />
+
+        </div>
+    </div>
+
+    <br />
+
+    <p *ngIf="mensagem.length" class="alert alert-info">{{mensagem}}</p>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <tbody>
+                        <tr class="active">
+                            <th title="Número" class="text-center">Nº </th>
+                            <th>Restaurante</th>
+                            <th>Prato</th>
+                            <th>Preço</th>
+                            
+                            <th class="text=center" class="text-center">Função</th>
+                        </tr>
+                        <tr *ngFor="let prato of (pratos | filtroPorNomePrato: textoPrato.value)">
+                            <td class="text-center">{{prato.id_prato}}</td>
+                            <td>{{prato.nome_restaurante}}</td>
+                            <td>{{prato.nome_prato}}</td>
+                            <td>{{prato.preco_prato}}</td>
+                            
+                            <td class="text-center">
+                                <a [routerLink]="['/prato/alterar', prato.id_prato]"><button class="btn btn-info"><i class="fa fa-pencil" aria-hidden="true"></i></button></a>
+                                <button class="btn btn-danger" (click)="excluir(prato)"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
